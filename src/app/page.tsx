@@ -1,3 +1,5 @@
+import { StrategyCallButton } from "@/components/StrategyCallButton";
+
 export default function Home() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6">
@@ -15,16 +17,11 @@ export default function Home() {
             maintainable, secure, and fast.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="/contact"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-            >
-              Book a free strategy call
-            </a>
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-start">
+            <StrategyCallButton showSupportingText className="sm:shrink-0" />
             <a
               href="/services"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15 sm:self-start"
             >
               View services
             </a>
@@ -144,6 +141,10 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        <div className="mt-10">
+          <StrategyCallButton />
+        </div>
       </section>
 
       <section className="border-t border-white/10 py-16">
@@ -204,6 +205,10 @@ export default function Home() {
             </div>
           </a>
         </div>
+
+        <div className="mt-10">
+          <StrategyCallButton />
+        </div>
       </section>
 
       <section className="border-t border-white/10 py-16">
@@ -216,16 +221,11 @@ export default function Home() {
             what “good” looks like. I’ll propose a pragmatic plan—architecture,
             timeline, and what it will take to maintain it long-term.
           </p>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="/contact"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-            >
-              Book a strategy call
-            </a>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-start">
+            <StrategyCallButton showSupportingText className="sm:shrink-0" />
             <a
               href="/sv"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15 sm:self-start"
             >
               Läs på svenska
             </a>

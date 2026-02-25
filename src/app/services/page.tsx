@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -85,24 +86,23 @@ export default function ServicesPage() {
         ))}
       </div>
 
+      <div className="mt-10">
+        <StrategyCallButton />
+      </div>
+
       <div className="mt-14 rounded-3xl bg-white/[0.03] p-10 ring-1 ring-white/10">
         <h2 className="text-xl font-semibold tracking-tight text-white">
           Not sure where to start?
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-white/70">
-          Book a short call and I’ll help you scope the first step: what to build
-          now, what to postpone, and how to keep it maintainable long-term.
+          Book a Strategy Call and I’ll help you scope the first step: what to
+          build now, what to postpone, and how to keep it maintainable long-term.
         </p>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="/contact"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-          >
-            Contact / book a call
-          </a>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-start">
+          <StrategyCallButton showSupportingText className="sm:shrink-0" />
           <a
             href="/case-studies"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15 sm:self-start"
           >
             See case studies
           </a>

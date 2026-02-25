@@ -7,6 +7,7 @@ import { cn } from "@/lib/cn";
 import { site } from "@/lib/site";
 import { LocaleSwitch } from "@/components/LocaleSwitch";
 import { Logo } from "@/components/Logo";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 function stripLocale(pathname: string) {
   if (pathname === "/sv") return "/";
@@ -67,12 +68,10 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LocaleSwitch />
-          <Link
-            href={`${base}${isSwedish ? "/kontakt" : "/contact"}`}
-            className="hidden h-10 items-center justify-center rounded-full bg-white px-4 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200 sm:inline-flex"
-          >
-            {isSwedish ? "Boka samtal" : "Book a call"}
-          </Link>
+          <StrategyCallButton
+            size="sm"
+            className="hidden sm:flex"
+          />
         </div>
       </div>
     </header>

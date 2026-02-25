@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import { ContactForm } from "@/components/ContactForm";
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -66,14 +67,9 @@ export default function ContactPage() {
               <div className="text-xs font-semibold uppercase tracking-wide text-white/55">
                 Strategy call
               </div>
-              <a
-                className="mt-4 inline-flex h-11 w-full items-center justify-center rounded-full bg-white px-4 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-                href={site.calendly}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book a call
-              </a>
+              <div className="mt-4">
+                <StrategyCallButton fullWidth showSupportingText />
+              </div>
             </div>
           ) : null}
         </aside>

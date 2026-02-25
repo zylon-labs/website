@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 export const metadata: Metadata = {
   title: "Platform maintenance & retainer",
@@ -155,12 +156,7 @@ export default function MaintenanceRetainerLanding() {
               delivery.
             </p>
             <div className="mt-4">
-              <a
-                href="/contact"
-                className="inline-flex h-11 w-full items-center justify-center rounded-full bg-white px-4 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-              >
-                Contact / book a call
-              </a>
+              <StrategyCallButton fullWidth />
             </div>
           </div>
         </aside>

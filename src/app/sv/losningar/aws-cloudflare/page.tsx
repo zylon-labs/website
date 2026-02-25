@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 export const metadata: Metadata = {
   title: "AWS + Cloudflare",
@@ -78,12 +79,7 @@ export default function AwsCloudflareSvLanding() {
               er stabilisera och förbättra er AWS + Cloudflare setup.
             </p>
             <div className="mt-4">
-              <a
-                href="/sv/kontakt"
-                className="inline-flex h-11 w-full items-center justify-center rounded-full bg-white px-4 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-              >
-                Kontakta / boka samtal
-              </a>
+              <StrategyCallButton fullWidth />
             </div>
           </div>
         </aside>

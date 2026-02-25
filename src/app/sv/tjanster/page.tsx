@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 export const metadata: Metadata = {
   title: "Tjänster",
@@ -85,6 +86,10 @@ export default function ServicesSvPage() {
         ))}
       </div>
 
+      <div className="mt-10">
+        <StrategyCallButton />
+      </div>
+
       <div className="mt-14 rounded-3xl bg-white/[0.03] p-10 ring-1 ring-white/10">
         <h2 className="text-xl font-semibold tracking-tight text-white">
           Osäker på var du ska börja?
@@ -93,16 +98,11 @@ export default function ServicesSvPage() {
           Boka ett kort samtal så hjälper jag dig välja första steget: vad ni
           ska bygga nu, vad som kan vänta, och hur ni förvaltar det långsiktigt.
         </p>
-        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="/sv/kontakt"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-          >
-            Kontakta / boka samtal
-          </a>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-start">
+          <StrategyCallButton showSupportingText className="sm:shrink-0" />
           <a
             href="/sv/case"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-white/10 px-5 text-sm font-semibold text-white ring-1 ring-white/15 transition-colors hover:bg-white/15 sm:self-start"
           >
             Se case
           </a>
@@ -111,4 +111,3 @@ export default function ServicesSvPage() {
     </div>
   );
 }
-

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import { Card } from "@/components/Card";
 import { PageIntro } from "@/components/PageIntro";
+import { StrategyCallButton } from "@/components/StrategyCallButton";
 
 export const metadata: Metadata = {
   title: "Case",
@@ -33,6 +34,10 @@ export default function CaseIndexSv() {
         />
       </div>
 
+      <div className="mt-10">
+        <StrategyCallButton />
+      </div>
+
       <div className="mt-14 rounded-3xl bg-white/[0.03] p-10 ring-1 ring-white/10">
         <h2 className="text-xl font-semibold tracking-tight text-white">
           Vill du ha liknande resultat?
@@ -42,12 +47,7 @@ export default function CaseIndexSv() {
           leverans och drift—hör av dig.
         </p>
         <div className="mt-6">
-          <a
-            href="/sv/kontakt"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-white px-5 text-sm font-semibold text-zinc-950 transition-colors hover:bg-zinc-200"
-          >
-            Kontakta / boka samtal
-          </a>
+          <StrategyCallButton showSupportingText />
         </div>
       </div>
     </div>

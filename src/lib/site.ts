@@ -13,8 +13,10 @@ export const site = {
     linkedin: "https://www.linkedin.com/",
     github: "https://github.com/",
   },
-  // Optional: add later when you have it
-  calendly: "",
+  calendly: "https://calendly.com/marcus-zylon-labs/30min",
+  primaryCtaLabel: "Book a Strategy Call",
+  primaryCtaSupportingText:
+    "30-minute focused session to explore your systems, challenges and growth opportunities.",
 };
 
 export type Site = typeof site;
