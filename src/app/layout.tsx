@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { GA4Events } from "@/components/analytics/GA4Events";
 import { site } from "@/lib/site";
 
 const GA_MEASUREMENT_ID = "G-0MP4FYJZJG";
@@ -93,6 +94,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GA4Events />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

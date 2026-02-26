@@ -8,6 +8,30 @@ function encodeMailto(value: string) {
   return encodeURIComponent(value).replace(/%20/g, "+");
 }
 
+function fireContactSubmitEvent(onDone?: () => void) {
+  if (typeof window === "undefined") {
+    onDone?.();
+    return;
+  }
+
+  const done = () => onDone?.();
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "contact_form_submit", {
+      event_category: "lead",
+      event_label: "Contact Form",
+      transport_type: "beacon",
+      event_callback: done,
+    });
+
+    // Ensure we still proceed even if gtag is blocked.
+    window.setTimeout(done, 600);
+    return;
+  }
+
+  done();
+}
+
 export function ContactForm({ locale }: { locale: "en" | "sv" }) {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -73,7 +97,9 @@ export function ContactForm({ locale }: { locale: "en" | "sv" }) {
       className="grid gap-4"
       onSubmit={(e) => {
         e.preventDefault();
-        window.location.href = mailtoHref;
+        fireContactSubmitEvent(() => {
+          window.location.href = mailtoHref;
+        });
       }}
     >
       <div className="grid gap-4 sm:grid-cols-2">
