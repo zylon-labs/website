@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Metadata } from "next";
 
 import { ContactForm } from "@/components/ContactForm";
@@ -26,6 +27,19 @@ export default function ContactPage() {
         </div>
 
         <aside className="space-y-4">
+          <div className="rounded-2xl bg-white/[0.03] p-6 ring-1 ring-white/10">
+            <Image
+              src={site.founderImage}
+              alt="Marcus Christiansson, founder of Zylon Labs"
+              width={120}
+              height={120}
+              className="size-24 rounded-full object-cover ring-1 ring-white/10"
+            />
+            <div className="mt-4 text-sm font-semibold text-white">
+              Marcus Christiansson
+            </div>
+            <p className="mt-1 text-xs text-white/60">Founder, Zylon Labs</p>
+          </div>
           <div className="rounded-2xl bg-white/[0.03] p-6 ring-1 ring-white/10">
             <div className="text-xs font-semibold uppercase tracking-wide text-white/55">
               Email

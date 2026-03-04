@@ -1,29 +1,69 @@
-## Zylon Labs website
+# Zylon Labs website
 
-Marketing site for **Zylon Labs** (EN + `/sv`), built with Next.js (App Router) + Tailwind.
+Marketing website for **Zylon Labs** — building AI automation, custom CRM systems and internal tools.
+
+🌍 https://zylon-labs.com
+
+Built with Next.js (App Router) + Tailwind.
 
 ## Getting Started
 
-Install deps (already installed) and run dev:
+Install dependencies and run dev server:
 
 ```bash
+npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Environment variables
 
-- `NEXT_PUBLIC_SITE_URL` (recommended in production): `https://zylon-labs.com`
+```bash
+NEXT_PUBLIC_SITE_URL=https://zylon-labs.com
+```
 
-This is used for canonical URLs, metadata base, `sitemap.xml`, and `robots.txt`.
+Used for:
 
-## Deploy (Railway)
+- canonical URLs
+- metadata base
+- sitemap.xml
+- robots.txt
 
-- Build command: `npm run build`
-- Start command: `npm run start`
-- Set env var: `NEXT_PUBLIC_SITE_URL=https://zylon-labs.com`
+## Deploy
+
+### Railway
+
+**Build command**
+
+```bash
+npm run build
+```
+
+**Start command**
+
+```bash
+npm run start
+```
+
+**Environment variable**
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://zylon-labs.com
+```
+
+## Project structure
+
+```
+src/
+public/
+scripts/
+```
 
 ## Notes
 
-- Brand config lives in `src/lib/site.ts`.
+Brand config lives in:
+
+```
+src/lib/site.ts
+```

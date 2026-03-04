@@ -11,8 +11,10 @@ export const site = {
     "https://zylon-labs.com",
   social: {
     linkedin: "https://linkedin.com/in/marcus-christiansson",
-    github: "https://github.com/",
+    github: "https://github.com/zylon-labs",
   },
+  founder: "Marcus Christiansson",
+  founderImage: "/marcus-christiansson.png",
   calendly: "https://calendly.com/marcus-zylon-labs/30min",
   primaryCtaLabel: "Book a Strategy Call",
   primaryCtaSupportingText:

@@ -80,7 +80,8 @@ export default function RootLayout({
     },
     founder: {
       "@type": "Person",
-      name: "Marcus Christiansson",
+      name: site.founder,
+      image: `${site.url}${site.founderImage}`,
     },
   };
 
