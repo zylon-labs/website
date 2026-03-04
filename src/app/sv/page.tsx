@@ -11,7 +11,7 @@ export default function HomeSv() {
             Skräddarsydda CRM, AI-automation och interna system för växande bolag
           </div>
           <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl">
-            Jag bygger komplexa system som gör verksamheter smartare.
+            Bygger skräddarsydda system som hjälper verksamheter att bli smartare.
           </h1>
           <p className="mt-6 text-lg leading-8 text-white/70">
             Skräddarsydda CRM, interna verktyg, AI-automation, API-integrationer

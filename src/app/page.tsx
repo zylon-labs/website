@@ -9,7 +9,7 @@ export default function Home() {
             Custom CRM, AI automation and internal systems for growing companies
           </div>
           <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl">
-            I build complex systems that make businesses run smarter.
+            Building custom systems that help businesses run smarter.
           </h1>
           <p className="mt-6 text-lg leading-8 text-white/70">
             Custom CRMs, internal tools, AI automation, API integrations, and
