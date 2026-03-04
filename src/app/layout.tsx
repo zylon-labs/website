@@ -73,6 +73,15 @@ export default function RootLayout({
     legalName: site.legalName,
     url: site.url,
     email: site.email,
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "SE",
+      addressLocality: "Sweden",
+    },
+    founder: {
+      "@type": "Person",
+      name: "Marcus Christiansson",
+    },
   };
 
   return (

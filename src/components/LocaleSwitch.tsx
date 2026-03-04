@@ -13,6 +13,7 @@ const EN_TO_SV_SEGMENT: Record<string, string> = {
   insights: "insikter",
   "case-studies": "case",
   solutions: "losningar",
+  privacy: "integritet",
 };
 
 const SV_TO_EN_SEGMENT: Record<string, string> = Object.fromEntries(

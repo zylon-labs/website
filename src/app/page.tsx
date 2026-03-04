@@ -6,7 +6,7 @@ export default function Home() {
       <section className="py-20 sm:py-28">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-xs font-semibold tracking-wide text-white/75 ring-1 ring-white/10">
-            Technical partner for growing companies
+            Custom CRM, AI automation and internal systems for growing companies
           </div>
           <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl">
             I build complex systems that make businesses run smarter.
